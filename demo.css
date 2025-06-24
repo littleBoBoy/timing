@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  // background: #0e141b;
+  background: black;
+  overflow: hidden;
+}
+.body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.body .wrapper {
+  width: 100%;
+  top: -20%;
+  text-align: center;
+  position: absolute;
+}
+.body .welcome {
+  z-index:1;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  font-weight: 400;
+  color: rgba(224, 230, 235, 0.89);
+  font-size: 4vw;
+  line-height: 46px;
+  text-decoration: none;
+  text-shadow: 1px 1px 5px #336699;
+}
+.body .welcome:hover {
+	cursor: pointer;
+	text-shadow: 1px 1px 10px #336699;
+}
+.column,
+.coln {
+  font-weight: 300;
+  color: rgba(224, 230, 235, 0.89);
+  font-size: 8vw;
+  line-height: 86px;
+  display: inline-block;
+  vertical-align: top;
+}
+.column {
+  transition: transform 300ms ease-in;
+}
+.coln {
+  transform: translateY(calc(50vh - 43px));
+}
+.column div {
+  transition: opacity 500ms, text-shadow 400ms;
+  opacity: 0.25;
+}
+.column .visible {
+  opacity: 1;
+  text-shadow: 1px 1px 30px #336699;
+}
+.column .close {
+  opacity: 0.35;
+}
+.column .far {
+  opacity: 0.15;
+}
+.column .distant {
+  opacity: 0.1;
+}
+
+.column .none {
+  opacity: 0;
+}
